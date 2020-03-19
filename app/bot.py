@@ -2,7 +2,7 @@ import os, time, json, pprint, math
 import piazza_api
 import matcher
 
-def update(bot, erase=False):
+def update(bot, erase=True):
     piazza = piazza_api.Piazza()
     piazza.user_login(bot['login']['email'], bot['login']['password'])
 
@@ -11,7 +11,8 @@ def update(bot, erase=False):
 
     if erase:
         # erase question data
-        data['questions'] = {}
+        data['questions'] = []
+        data['answers'] = []
         # erase folder data
         data['folders'] = {}
         # erase total data
@@ -36,7 +37,7 @@ def update(bot, erase=False):
 
                 data['total'] = term_stats
 
-                update_term_data(data, piazza_term)
+                update_term_data(data, piazza_term, term)
             else:
                 print('nothing to update for ' + term)
     except:
@@ -49,8 +50,8 @@ def update(bot, erase=False):
     json.dump(data, data_file, indent=4) # write new data to file
 
     # pass two, NLP data
-    for question_id in data['questions']:
-        question = data['questions'][question_id]
+    '''
+    for question in data['questions']:
         for i in [question['content'], question['title']]:
             for word in i.split(' '):
                 if len(word) < 2: # skip single character and empty strings
@@ -67,28 +68,24 @@ def update(bot, erase=False):
     for word in data['df']:
         data['idf'][word] = math.log(unique_words / (data['df'][word] + 1))
 
-    # barf, check if there are any matching questions in the corpus
-    keys = list(int(i) for i in data['questions'].keys())
-    k1 = len(keys) - 1
     while k1 > 0:
         q1 = data['questions'][str(keys[k1])]
         q2 = data['questions'][str(keys[k1 - 1])]
         if matcher.questions_match(data['idf'], q1, q2):
             print('questions %d and %d match!' % (keys[k1], keys[k1 - 1]))
         k1 -= 1
+    '''
 
     data_file.seek(0) # erase the contents of the file
     data_file.truncate()
     json.dump(data, data_file, indent=4) # write new data to file
 
-def update_term_data(data, piazza_term):
+def update_term_data(data, piazza_term, term_id):
     term_stats = piazza_term.get_statistics()
 
     current_id = 1
-    if len(data['questions']) > 1: # if there is question data, start at the latest post
-        int(data['question_ids'].keys()[-1])
     limit = term_stats['total']['questions']
-    wait_time = 0.1
+    wait_time = 0.5
     timeout_wait_time = 30
     while current_id < limit:
         # keep trying to get post until we succeed
@@ -113,6 +110,7 @@ def update_term_data(data, piazza_term):
 
                 post = {
                     'id': piazza_post['nr'],
+                    'term': term_id,
                     'folders': piazza_post['folders'],
                     'answered': answered,
                     'title': matcher.clean(piazza_post['history'][0]['subject']),
@@ -120,20 +118,31 @@ def update_term_data(data, piazza_term):
                     'responses': responses
                 }
 
-                data['questions'][str(post['id'])] = post
+                if answered:
+                    answer = {
+                        'question_id': piazza_post['nr'],
+                        'term': term_id
+                    }
+
+                    data['answers'].append(answer)
+
+                data['questions'].append(post)
 
                 # increment number of questions in each folder
                 for folder in piazza_post['folders']:
                     if not folder in data['folders']:
                         data['folders'][folder] = 0
                     data['folders'][folder] += 1
-            except piazza_api.exceptions.RequestError:
-                # if we get a request error, wait and print to console
-                print('too fast, waiting %d... ' % timeout_wait_time)
-                for i in range(timeout_wait_time):
-                    print(i + 1, end=' ', flush=True); time.sleep(1)
-                # increment the timeout wait time for next time we get a request error
-                print(); timeout_wait_time += 30
+            except piazza_api.exceptions.RequestError as err:
+                if "foo fast" not in str(err):
+                    current_id += 1
+                else:
+                    # if we get a request error, wait and print to console
+                    print('too fast, waiting %d... ' % timeout_wait_time)
+                    for i in range(timeout_wait_time):
+                        print(i + 1, end=' ', flush=True); time.sleep(1)
+                    # increment the timeout wait time for next time we get a request error
+                    print(); timeout_wait_time += 30
 
 def get_piazza_responses(post):
     responses = []

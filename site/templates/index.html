@@ -12,14 +12,17 @@
 						<div class="list-group bot-list" id="list-tab" role="tablist">
 							{% for bot in bots %}
 							{% set identifier = bot.name|lower|replace(' ', '_') %}
-							<a class="list-group-item list-group-item-action bot-tab-button" id="list-{{ identifier }}-list" data-toggle="list" href="#list-{{ identifier }}" role="tab" aria-controls="{{ identifier }}">{{ bot.name }}</a>
+							<a class="list-group-item list-group-item-action bot-tab-button"
+								id="list-{{ identifier }}-list" data-toggle="list" href="#list-{{ identifier }}"
+								role="tab" aria-controls="{{ identifier }}">{{ bot.name }}</a>
 							{% endfor %}
 						</div>
 					</div>
 				</div>
 				<div class="row mt-4">
 					<div class="col">
-						<button class="list-group-item list-group-item-action" data-toggle="modal" data-target="#create-new-bot-modal">Create new bot</button>
+						<button class="list-group-item list-group-item-action" data-toggle="modal"
+							data-target="#create-new-bot-modal">Create new bot</button>
 					</div>
 				</div>
 			</div>
@@ -28,45 +31,71 @@
 			<div class="tab-content" id="nav-tabContent">
 				{% for bot in bots %}
 				{% set identifier = bot.name|lower|replace(' ', '_') %}
-				<div class="tab-pane" id="list-{{ identifier }}" role="tabpanel" aria-labelledby="list-{{ identifier }}-list">
+				<div class="tab-pane" id="list-{{ identifier }}" role="tabpanel"
+					aria-labelledby="list-{{ identifier }}-list">
 					<div class="w-100">
 						<div class="mb-4">
 							<div class="d-flex justify-content-between align-items-center">
 								<h3 class="mb-0" style="border-bottom: 2px solid black">{{ bot.name }}</h3>
-								<span><input class="toggle-bot-view-raw" id="toggle-view-raw" bot-identifier="{{ identifier }}" type="checkbox"> Raw view</span>
+								<span><input class="toggle-bot-view-raw" id="toggle-view-raw"
+										bot-identifier="{{ identifier }}" type="checkbox"> Raw view</span>
 							</div>
 							<small>terms: {{ bot.terms }}</small>
 						</div>
-						<div class="bot-view-normal mb-4" id="bot-view-normal" bot-identifier="{{ identifier }}">
-							<h4>Questions</h4>
-							<button type="button" class="folder-filter btn btn-outline-primary btn-sm" folder-filter="all">all</button>
-							{% for folder in bot.data.folders %}
-							<button type="button" class="folder-filter btn btn-outline-primary btn-sm" folder-filter="{{ folder }}">{{ folder }}</button>
-							{% endfor %}
-							<ul class="list-group">
-								{% for question in bot.data.questions %}
-								<li class="question w-100 list-group-item flex-column align-items-start" folders="{{ question.folders|to_pretty_array }}">
-									<h5 class="mb-0">{{ question.title }}</h5>
-									<small>created {{ question.created }} by {{ question.author }} in {{ question.term }}. id {{ question.id }} in {{ question.folders }}</small>
-									<p class="mt-4 mb-0">{{ question.content }}</p>
-									{% if question.responses|length > 0 %}
-									<h5 class="mt-4">Responses</h5>
-									<ul class="list-group">
-										{% for response in question.responses %}
-										<li class="d-flex list-group-item flex-column align-items-start">
-											<div class="d-flex w-100 justify-content-between">
-												<p class="mb-0">{{ response.content }}</p>
-												<small>{{ question.author }}</small>
-											</div>
-										</li>
-										{% endfor %}
-									</ul>
-									{% endif %}
-								</li>
-								{% endfor %}
-							</ul>
+						<ul class="nav nav-tabs" id="myTab" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active" id="home-tab" data-toggle="tab" href="#question-data" role="tab"
+									aria-controls="question-data" aria-selected="true">Question data</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="response-data-tab" data-toggle="tab" href="#response-data" role="tab"
+									aria-controls="response-data" aria-selected="false">Response data</a>
+							</li>
+						</ul>
+						<div class="tab-content" id="myTabContent">
+							<div class="tab-pane fade show active" id="question-data" role="tabpanel" aria-labelledby="question-data-tab">
+								<h4 class="mt-2">Question data</h4>
+								<div id="folder-views" class="mb-2">
+									<button type="button" class="folder-filter btn btn-outline-primary btn-sm"
+										folder-filter="all">all</button>
+									{% for folder in data.folders %}
+									<button type="button" class="folder-filter btn btn-outline-primary btn-sm"
+										folder-filter="{{ folder }}">{{ folder }}</button>
+									{% endfor %}
+								</div>
+								<ul class="list-group">
+									{% for question in data.questions %}
+									<li class="question w-100 list-group-item flex-column align-items-start"
+										folders="{{ question.folders|to_pretty_array }}">
+										<h5 class="mb-0">{{ question.title }}</h5>
+										<p class="mt-2 mb-2">{{ question.content }}</p>
+										{% if question.responses|length > 0 %}
+										<ul class="list-group">
+											{% for response in question.responses %}
+											<li class="d-flex list-group-item flex-column align-items-start">
+												<div class="d-flex w-100 justify-content-between">
+													<p class="mb-0">{{ response.content }}</p>
+												</div>
+												<button type="button" class="mt-2 btn btn-secondary btn-sm mark-as-answer"
+													id="{{ question.id }}" term="{{ question.term }}">
+													Mark as answer
+												</button>
+											</li>
+											{% endfor %}
+										</ul>
+										{% endif %}
+									</li>
+									{% endfor %}
+								</ul>
+							</div>
+							<div class="tab-pane fade" id="response-data" role="tabpanel" aria-labelledby="response-data-tab">
+								<h4>Response data</h4>
+							</div>
 						</div>
-						<pre class="bot-view-raw" id="bot-view-raw" bot-identifier="{{ identifier }}" style="display: none"><code>{{ bot|tojson_pretty }}</code></pre>
+						<div class="bot-view-normal mb-4" id="bot-view-normal" bot-identifier="{{ identifier }}">
+						</div>
+						<pre class="bot-view-raw" id="bot-view-raw" bot-identifier="{{ identifier }}"
+							style="display: none"><code>{{ bot|tojson_pretty }}</code></pre>
 					</div>
 				</div>
 				{% endfor %}
@@ -75,7 +104,8 @@
 	</div>
 </div>
 
-<div class="modal fade" id="create-new-bot-modal" tabindex="-1" role="dialog" aria-labelledby="create-new-bot-modal" aria-hidden="true">
+<div class="modal fade" id="create-new-bot-modal" tabindex="-1" role="dialog" aria-labelledby="create-new-bot-modal"
+	aria-hidden="true">
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
@@ -93,7 +123,8 @@
 				</form>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-primary" id="create-bot-button" data-dismiss="modal">Create</button>
+				<button type="button" class="btn btn-primary" id="create-bot-button"
+					data-dismiss="modal">Create</button>
 			</div>
 		</div>
 	</div>

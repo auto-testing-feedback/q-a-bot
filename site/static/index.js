@@ -33,6 +33,17 @@ $(document).ready(function() {
 			})
 		})
 	})
+	$('.mark-as-answer').each(function() {
+		$(this).text('Mark as answer')
+		$(this).click(function() {
+			if($(this).text() == 'Mark as answer') {
+				$.post('/mark_as_answer', {term: $(this).attr('term'), id: $(this).attr('id')})
+				$(this).text('Unmark as answer')
+			} else {
+				$(this).text('Mark as answer')
+			}
+		})
+	})
 })
 
 $(window).resize(function() {

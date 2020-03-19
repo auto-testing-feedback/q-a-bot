@@ -2,7 +2,7 @@ import re
 from nltk.corpus import stopwords
 from bs4 import BeautifulSoup
 
-N = 1000 # ??? research needs to be done here
+N = .2 # ??? research needs to be done here
 
 stop_words = set(stopwords.words('english'))
 
@@ -16,6 +16,13 @@ def clean(string):
     for word in string.split(' '): # remove single character words
         if len(word) > 1:
             new_string += word + ' '
+    new_string = new_string.strip()
+    arr = new_string.split(' ')
+    for word in arr:
+        if 'http' in word or 'www' in word or '.com' in word:
+            arr.remove(word)
+    new_string = ' '
+    new_string = new_string.join(arr)
     return new_string
 
 def questions_match(idf_data, q1, q2):
@@ -27,7 +34,6 @@ def questions_match(idf_data, q1, q2):
         if word not in t2:
             continue
         similarity += t1[word] * t2[word]
-    print(similarity)
     return similarity > N
 
 def get_tf_table(string):
