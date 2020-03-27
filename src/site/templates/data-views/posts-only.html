@@ -1,0 +1,17 @@
+<h3 class="mt-4">Posts only</h3>
+<button type="button" class="folder-filter btn btn-outline-primary btn-sm" folder-filter="all">all</button>
+{% for folder in bot.data.folders %}
+<button type="button" class="folder-filter btn btn-outline-primary btn-sm"
+	folder-filter="{{ folder }}">{{ folder }}</button>
+{% endfor %}
+<ul class="list-group">
+	{% for question in bot.data.questions %}
+	<li class="question w-100 list-group-item flex-column align-items-start"
+		folders="{{ question.folders|to_pretty_array }}">
+		<h5 class="mb-0">{{ question.title }}</h5>
+		<small>created {{ question.created }} by {{ question.author }} in {{ question.term }}. id {{ question.id }} in
+			{{ question.folders }}</small>
+		<p class="mt-4 mb-0">{{ question.content }}</p>
+	</li>
+	{% endfor %}
+</ul>

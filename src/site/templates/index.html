@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Home</h1>
+
+<div class="row">
+	<div class="col-2" id="bot-col">
+		{% include "bot-select-panel.html" %}
+	</div>
+	<div class="col-10" id="data-col">
+		{% for bot in bots %}
+		{% set identifier = bot.name|lower|replace(' ', '_') %}
+		<div id="{{ identifier }}-view" identifier="{{ identifier }}" hidden="true">
+			<h2 class="mb-0">{{ bot.name }}</h2>
+			<p class="mb-0">{{ bot.terms }}</p>
+			View:
+			<select id="data-views">
+				<option value="piazza">Piazza-style</option>
+				<option value="posts-only">Posts only</option>
+				<option value="responses-only">Responses only</option>
+				<option value="grouped">Grouped</option>
+				<option value="raw">Raw</option>
+			</select>
+			{% set views = ['piazza', 'posts-only', 'responses-only', 'grouped', 'raw'] %}
+			{% for view in views %}
+				<div hidden="true" id="{{ view }}-view">
+					{% set file = 'data-views/' ~ view ~ '.html' %}
+					{% include file %}
+				</div>
+			{% endfor %}
+		</div>
+		{% endfor %}
+	</div>
+</div>
+
+<script src="/static/index.js"></script>
+{% endblock %}

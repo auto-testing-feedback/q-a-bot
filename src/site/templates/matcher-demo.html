@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Matcher demo</h1>
+<p>This is an interactive demonstration and showcase of the matcher used by this project, which is a conglomeration of
+	various natural language processing algorithms and concepts.</p>
+
+<h2>Demonstration</h2>
+<div class="w-4">
+	<h4>Phrase entry</h4>
+	<form>
+		<input type="checkbox" class="form-check-input" id="exampleCheck1">
+		<label class="form-check-label" for="exampleCheck1">Use data in database</label>
+		<br/><br/>
+		<div class="row">
+			<div class="col">
+				<input type="text" class="form-control mb-2" id="title1" placeholder="Title 1">
+				<textarea class="form-control" id="content1" rows="3" placeholder="Content 1"></textarea>
+			</div>
+			<div class="col">
+				<input type="text" class="form-control mb-2" id="title2" placeholder="Title 2">
+				<textarea class="form-control" id="content2" rows="3" placeholder="Content 2"></textarea>
+			</div>
+		</div>
+		<button id="submit" type="button" class="btn btn-primary mt-4">Submit</button>
+		<small id="submitError" class="form-text text-danger">There was a problem processing the entered
+			phrases.</small>
+
+		<br/><br/>
+		<code hidden id="output">
+			hi
+		</code>
+	</form>
+</div>
+
+<script src="/static/matcher-demo.js"></script>
+{% endblock %}

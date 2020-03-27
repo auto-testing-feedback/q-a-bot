@@ -1,0 +1,22 @@
+<h3 class="mt-4">Posts & responses</h3>
+<button type="button" class="folder-filter btn btn-outline-primary btn-sm" folder-filter="all">all</button>
+{% for folder in bot.data.folders %}
+<button type="button" class="folder-filter btn btn-outline-primary btn-sm"
+	folder-filter="{{ folder }}">{{ folder }}</button>
+{% endfor %}
+<br /><br />
+<ul class="list-group">
+	{% for question in bot.data.questions %}
+	{% if question.responses|length > 0 %}
+	{% for response in question.responses %}
+	<li class="d-flex list-group-item flex-column align-items-start">
+		<div class="d-flex w-100 justify-content-between">
+			<p class="mb-0">{{ response.content }}</p>
+			<small>{{ question.author }}</small>
+		</div>
+	</li>
+	{% endfor %}
+	{% endif %}
+	</li>
+	{% endfor %}
+</ul>

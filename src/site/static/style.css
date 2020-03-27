@@ -1,0 +1,23 @@
+html, body {
+	margin: 0px;
+}
+
+#home-container {
+	padding: 0;
+}	
+
+.list-group-item {
+	margin-bottom: 1rem;
+}
+
+#list-tab .list-group-item {
+	margin-bottom: 0;
+}
+
+.row:last-child {
+	margin-bottom: 0;
+}
+
+pre code {
+	font-size: 8pt;
+}

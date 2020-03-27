@@ -1,0 +1,1946 @@
+{
+    "total": {
+        "posts": 126,
+        "answers": 124
+    },
+    "folders": {
+        "midterm_exam": 2,
+        "lab1": 11,
+        "logistics": 3,
+        "other": 13,
+        "lab3": 9,
+        "project1": 28,
+        "project": 2,
+        "exam": 2,
+        "project2": 16,
+        "final_exam": 6,
+        "lab5": 7,
+        "lab2": 9,
+        "quiz1": 1,
+        "lab4": 7
+    },
+    "questions": [
+        {
+            "id": 6,
+            "term": "jmccf6d1kva4x4",
+            "folders": [
+                "midterm_exam"
+            ],
+            "answered": true,
+            "title": "midterm date",
+            "content": "hi dr hao,do you knowwhether the midterm is likely to be on monday, wednesday, or friday thanks",
+            "responses": [
+                {
+                    "content": "the midterm will be inclass, so there would be no time conflicts polling will be conducted when everyone has activated their piazza account in the first two weeks the most popular option will be chosen",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "term": "jmccf6d1kva4x4",
+            "folders": [
+                "lab1"
+            ],
+            "answered": true,
+            "title": "how do register my github username for lab",
+            "content": "how do register my github username for lab missed the email of where can register my username so how do register it for lab",
+            "responses": [
+                {
+                    "content": "if you filled out the survey on time, try going to githubcomcsciwwu while logged in to your account and see if you have an invite to join",
+                    "is_answer": true
+                },
+                {
+                    "content": "sent out the second round of invitations for people who were late",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "term": "jmccf6d1kva4x4",
+            "folders": [
+                "lab1"
+            ],
+            "answered": true,
+            "title": "how do add commit message",
+            "content": "am attempting to do lab but am stuck on the commit and push step instead of text box underneath the commit message label, have notice that says unborn branch this commit will create the branch 'master' if try to commit, get an error telling me to add commit message, but have no way to do that below is an image of what my git staging window looks like, for reference",
+            "responses": [
+                {
+                    "content": "i'd recommend using bash console and just committing using git commit am message here, gui is funky",
+                    "is_answer": true
+                },
+                {
+                    "content": "you simply need to type in the blank box that says commit message anything, but you may want to deliver more meaningful commit message like finish lab1 as is shown in the lab1 instruction",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "term": "jmccf6d1kva4x4",
+            "folders": [
+                "lab1"
+            ],
+            "answered": true,
+            "title": "select branch",
+            "content": "in my attempt to clone my repository am being prompted to select branch, yet am seemingly being provided with no branches to select is there something that have to do on github in order to select branch does anyone know what to do",
+            "responses": [
+                {
+                    "content": "we haven't touched branches of version control yet, and you may not want to mess with multibranches for nowif you follow strictly the steps in lab1 instruction, the default master branch should already be selected for you automatically if you can provide more info eg, screen shot, it will be easier to see what went wrong",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "term": "jmccf6d1kva4x4",
+            "folders": [
+                "lab1",
+                "logistics",
+                "other"
+            ],
+            "answered": true,
+            "title": "help on getting personal pc set up with eclipse cmd path error",
+            "content": "am having trouble setting up this jdk file for eclipse to run properly, am stuck on verifying it was installed correctly installed it on my drive here is my directorythis directory should be set incprogram filesjavajdk180181bin however get this error when running the command prompt to verify this installationit tries to access program files in drivejava does not even exist anymore, deleted and shred that file after my first failed attempt to add the jdk am confused as to why the cmd prompt is even trying to acsess that in the first place since the directory is set for the actual file location in the drivedoes anyone know how to proceed have no clue how to get the directory so it wont access my drive",
+            "responses": [
+                {
+                    "content": "please talk to your ta when you get chance, or me after next monday's class all lab machines have everything preinstalled, and won't stop you from finishing lab1",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 16,
+            "term": "jmccf6d1kva4x4",
+            "folders": [
+                "other"
+            ],
+            "answered": true,
+            "title": "power point slide",
+            "content": "hi was wondering if you could post the slides on canvas sometime soon so can take notes with them",
+            "responses": [
+                {
+                    "content": "hi, derek,i will try to upload the slides sooner the same day after the lecture the reason is that early access to slides tends to encourage more people to skip the classthanks",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 17,
+            "term": "jmccf6d1kva4x4",
+            "folders": [
+                "other"
+            ],
+            "answered": true,
+            "title": "what is the ta's email",
+            "content": "what's the ta's email",
+            "responses": [
+                {
+                    "content": "barragbwwuedu",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 18,
+            "term": "jmccf6d1kva4x4",
+            "folders": [
+                "other"
+            ],
+            "answered": true,
+            "title": "was wondering if anyone has martin neifert's email he is one of the ta's",
+            "content": "tried to look on the syllabus and looked online for martin neifert's email but couldn't find it, was hoping someone has it and could help me out",
+            "responses": [
+                {
+                    "content": "neifermwwuedu",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 21,
+            "term": "jmccf6d1kva4x4",
+            "folders": [
+                "lab3"
+            ],
+            "answered": true,
+            "title": "opening and closing scanner instances",
+            "content": "should we be opening and closing the instances of scanner around where we need them or just open one instance before we need it and close it at the very end of the program",
+            "responses": [
+                {
+                    "content": "you should only need one instance of scanner ive also heard that you can only open scanner object from systemin once in program and cant make another one once youve closed it cannot confirm if that is actually true but even if it isnt, you should only have to open it once at the beginning of your program and end it when the program is terminated to prevent resource leak",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 23,
+            "term": "jmccf6d1kva4x4",
+            "folders": [
+                "other",
+                "project1"
+            ],
+            "answered": true,
+            "title": "partnersgroup for project",
+            "content": "does anyone want to partner up or make group of for the project i'm availableon weekends or before noon on weekdays to meet in person",
+            "responses": [
+                {
+                    "content": "i'll partner with you",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 25,
+            "term": "jmccf6d1kva4x4",
+            "folders": [
+                "project1",
+                "other",
+                "project"
+            ],
+            "answered": true,
+            "title": "partner",
+            "content": "is anyone still looking for partner would be available to work on it any day between 4pm and 6pm and remotely any time btw am justin, and please respond to this piazza or email wardkijwwuedu if you are interested",
+            "responses": [
+                {
+                    "content": "still need partner my email is hadawadwwuedu",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 27,
+            "term": "jmccf6d1kva4x4",
+            "folders": [
+                "project1"
+            ],
+            "answered": false,
+            "title": "project partner",
+            "content": "hello i'm looking for partner for project 1, anyone available can meetbetween 10am and 1pmon monday, tuesday, thursday, or friday, orwednesday before 1pm my email is caceremwwuedu",
+            "responses": [
+                {
+                    "content": "i'm available if you still need someonemccaulr3wwuedu",
+                    "is_answer": false
+                }
+            ]
+        },
+        {
+            "id": 28,
+            "term": "jmccf6d1kva4x4",
+            "folders": [
+                "project1"
+            ],
+            "answered": true,
+            "title": "project repository",
+            "content": "for creating repository for project 1, should we designate it as public or private the instructions don't make it clear thanks",
+            "responses": [
+                {
+                    "content": "the instruction does say that you should follow the lab1 instruction in terms of repo creation all the repos you make for this class will be private otherwise, your assignments will be exposed to other students, and renders penalties",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 29,
+            "term": "jmccf6d1kva4x4",
+            "folders": [
+                "project1"
+            ],
+            "answered": false,
+            "title": "project partner",
+            "content": "i'm still in need of partnergroup for project if anyone needs one still, email me at metzelawwuedu i'm available weekends, thursdays after 10 am, and tuesdays after pm",
+            "responses": []
+        },
+        {
+            "id": 30,
+            "term": "jmccf6d1kva4x4",
+            "folders": [
+                "project1"
+            ],
+            "answered": true,
+            "title": "project partner",
+            "content": "i'm still looking for project partner to team up withi'm free saturdays and weekdays before 1pm and after",
+            "responses": [
+                {
+                    "content": "am still in need of partner as well my email is agnishswwuedu",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 31,
+            "term": "jmccf6d1kva4x4",
+            "folders": [
+                "project1"
+            ],
+            "answered": true,
+            "title": "project partner",
+            "content": "hello,i'm bit late to the party but i'm looking for partneremail is troyerawwuedumy schedule is pretty wide open so i'm sure we could figure something out",
+            "responses": [
+                {
+                    "content": "email sent",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 34,
+            "term": "jmccf6d1kva4x4",
+            "folders": [
+                "project1"
+            ],
+            "answered": false,
+            "title": "project partner",
+            "content": "realize this is bit late, but if anyone is still looking for partner hit me up my email is barnest8wwuedu",
+            "responses": []
+        },
+        {
+            "id": 35,
+            "term": "jmccf6d1kva4x4",
+            "folders": [
+                "project1"
+            ],
+            "answered": true,
+            "title": "project partner",
+            "content": "hey,sorry for adding to the spam but does anyone else out there still need partner for project my email is berrescwwueduand i'm still looking for someone to work with let me know if you want to work togetherchris",
+            "responses": [
+                {
+                    "content": "still need one troyerawwuedu",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 36,
+            "term": "jmccf6d1kva4x4",
+            "folders": [
+                "lab3",
+                "other"
+            ],
+            "answered": false,
+            "title": "class and lab",
+            "content": "hello, family member has become immobilized since tuesday and have had to be home every night so that is why can't come to class on wednesday and friday and haven't finished the lab yet",
+            "responses": []
+        },
+        {
+            "id": 37,
+            "term": "jmccf6d1kva4x4",
+            "folders": [
+                "midterm_exam",
+                "exam",
+                "logistics",
+                "other"
+            ],
+            "answered": true,
+            "title": "cheat sheet for midterm",
+            "content": "hello everyonei am sure this question has been answered in class, but have been out of town an unable to make the previous couple lectures does the cheat sheet for tomorrow's midterm have to be hand written or can it be typed unfortunately the piazza post regarding the midterm does not clarify and want to make sure have usable cheat sheet for the examthanks best wishes to all on your final studying,ethan",
+            "responses": [
+                {
+                    "content": "it doesn't matter, either way works as long as it's only page front and back",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 38,
+            "term": "jmccf6d1kva4x4",
+            "folders": [
+                "project2"
+            ],
+            "answered": true,
+            "title": "project solve return type",
+            "content": "in the instructions for project 2, we are told that the header for solve should bepublic static void solvechar puzzlebut then we are told to return true or false based on whether the puzzle was solved should the return type for solve be void or boolean",
+            "responses": [
+                {
+                    "content": "that is typo of mine please change the void to boolean thanks",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 39,
+            "term": "jmccf6d1kva4x4",
+            "folders": [
+                "project2"
+            ],
+            "answered": false,
+            "title": "project grouppartner",
+            "content": "might be bit late, but project sort of snuck up on me is anyone still looking for grouppartner my email is hadawadwwuedu",
+            "responses": []
+        },
+        {
+            "id": 41,
+            "term": "jmccf6d1kva4x4",
+            "folders": [
+                "project2"
+            ],
+            "answered": false,
+            "title": "the method check returns true when",
+            "content": "there seems to be typo in the project description when talking bout the method check it saysthe method check accepts char as the only parameter, which stands for given sudoku puzzle complete or not check return true when the given puzzle, otherwise falsecould someone please explain what this means thanks",
+            "responses": [
+                {
+                    "content": "yes, there appears to be typo there what it is supposed to say is check returns true when the given puzzle is valid, otherwise it returns false",
+                    "is_answer": false
+                }
+            ]
+        },
+        {
+            "id": 42,
+            "term": "jmccf6d1kva4x4",
+            "folders": [
+                "project2"
+            ],
+            "answered": true,
+            "title": "example of unsolveable puzzle",
+            "content": "am little bit lost when it comes to the unsolvable bit,check the validity of the given puzzle if not valid, print that the given sudoku puzzle isinvalid and return false2 if valid, solve the given puzzleaif the puzzle is not solvable, print out this puzzle is unsolvable, and return falsenothing online is really helping explain situation where this occurs thanks",
+            "responses": [
+                {
+                    "content": "think of case like this, 2, 3, 4, 5, 6, 7, 8, 99, 8, 7, 6, 5, 4, 3, 2,",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 43,
+            "term": "jmccf6d1kva4x4",
+            "folders": [
+                "final_exam"
+            ],
+            "answered": true,
+            "title": "datetime of final",
+            "content": "does anyone know when our final will be",
+            "responses": [
+                {
+                    "content": "believe that it's on tuesday, december 11 from330 530",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 44,
+            "term": "jmccf6d1kva4x4",
+            "folders": [
+                "lab5"
+            ],
+            "answered": false,
+            "title": "lab",
+            "content": "did our professorgo over lab in class because the pdf file is very confusing on what we're supposed to do have been sick for while so wasn't able to make it into class yesterday",
+            "responses": [
+                {
+                    "content": "he didnt go over it yesterday, but from my understanding, in the first part you are writing methods that imitate stacks by using queues, and vice versa for the second part",
+                    "is_answer": false
+                }
+            ]
+        },
+        {
+            "id": 46,
+            "term": "jmccf6d1kva4x4",
+            "folders": [
+                "final_exam"
+            ],
+            "answered": false,
+            "title": "final from previous quarter",
+            "content": "can we have final from previous quarter posted, like there was for the midterm it would be helpful to know how the questions will be formatted and to get an idea of what to study",
+            "responses": []
+        },
+        {
+            "id": 47,
+            "term": "jmccf6d1kva4x4",
+            "folders": [
+                "final_exam"
+            ],
+            "answered": true,
+            "title": "timeroom of the final",
+            "content": "its in the same room as the lectures, right but ive seen in some places that its at 300, and others saying 800",
+            "responses": [
+                {
+                    "content": "it's definitely at 330",
+                    "is_answer": false
+                },
+                {
+                    "content": "330 pm 530 pm tuesday dec 11th",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 48,
+            "term": "jmccf6d1kva4x4",
+            "folders": [
+                "final_exam"
+            ],
+            "answered": true,
+            "title": "ascii table final",
+            "content": "do we need an ascii table on our page of notes for the final",
+            "responses": [
+                {
+                    "content": "in class, he said we didnt",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "lab1"
+            ],
+            "answered": true,
+            "title": "good place to download java jdk",
+            "content": "does the following link contain what need to download java on my windows 10 you for your timeaustin",
+            "responses": [
+                {
+                    "content": "versions above are actively maintained if you don't want to go through this trouble, jdk 18 also works fine",
+                    "is_answer": true
+                },
+                {
+                    "content": "alternatively you can get it openjdk 11 and find the prebuilt installer for your os, this may be easier than the official site",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "project1"
+            ],
+            "answered": true,
+            "title": "apps or recommended addons to github",
+            "content": "professor qiang is there any apps or addons from the market place on github you would like to see us use during the course bots, organizers, etc",
+            "responses": [
+                {
+                    "content": "no thanks",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "other"
+            ],
+            "answered": false,
+            "title": "when don't you want your code to be executable",
+            "content": "iwas asked this question through email am confused why you would sometimes wouldn't want to make class executable",
+            "responses": [
+                {
+                    "content": "",
+                    "is_answer": false
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "lab1"
+            ],
+            "answered": true,
+            "title": "travis ci length of build",
+            "content": "it has been hours since travis ci began to check my github build in the lab and it has not even passed the job received portion yet is anyone else having trouble with this from this mornings lab",
+            "responses": [
+                {
+                    "content": "yeah i'm having this problem as well let me know if you find fix or if it works for you, i'll let you know if find anything as well",
+                    "is_answer": false
+                },
+                {
+                    "content": "if you happen to work on the assignment at the same time as others, there might be long queue there are currently 86 pushes being queued things would resolve in few more hours",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "lab1"
+            ],
+            "answered": true,
+            "title": "using ubuntu terminal windows app for lab",
+            "content": "dr hao, was able to find an ubuntu terminal app on the windows store that has the exact same functionality as the native terminal in ubuntu would this be sufficient for completion of the lab or should use virtual machine instead",
+            "responses": [
+                {
+                    "content": "encourage you to try, and you will soon discover its limitations eg, you can't transfer files from windows to that mini ubuntu system, or you can't start 3rdparty text editor like atom",
+                    "is_answer": true
+                },
+                {
+                    "content": "it's worth mentioning thatvs code, popular text editor similar to atom, has an extensionthat allows opening the text editor remotely from within that ubuntu subsystem once opened into folder in ubuntu, it functions just like it was running on linux natively same terminal and file access might be handy workaround to the limitations of the system that dr hao pointed out, although it will never be quite as goodas running linux proper",
+                    "is_answer": false
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "logistics"
+            ],
+            "answered": false,
+            "title": "how do you use text editor like atom",
+            "content": "was asked this question through emailhow do you use text editor like atom",
+            "responses": [
+                {
+                    "content": "don't use atom, use vs code they are similar they mostly function as just text editor, however, while editing the files it does color the different words which represent different things on vs code you can use git from there, and you can run java in vs code's own terminali hope this answered your question",
+                    "is_answer": false
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "other"
+            ],
+            "answered": true,
+            "title": "ran into problem trying to dual boot windows and ubuntu",
+            "content": "hello everyone,as the title suggests, i'm wanting to dual boot my windows operating system with ubuntu have all the installations on my flashdrive and was able to get to the ubuntu trial menu now supposedly during the installation process there's supposed to be an option to run ubuntu alongside windows, but in my installation ubuntu only gives me the options to erase windows or to set the partitions myself i'm not sure why the option won't show up, but might assume it has to do with my hardrive storage my os has 18 tb of available space and 02 of that is used up by personal files software, images, games, etc was wondering if anyone has ever run into this issue before and was able to resolve the issue if so, any advice would be greatly appreciatedthanks in advance,isaiahps i'm in no rush to get this setup as i'm fine with using oncampus pcs to get my hw done if necessary, but would like to get this resolved at some point",
+            "responses": [
+                {
+                    "content": "i've tried to do the exact same thing you've done, and also found that the only way to dualboot ubuntu with windows is seemingly to set the partitions yourself found guide that might help, it explains how to create each partition root, swap and home haven't followed it all the way through, but you might find it followed the tutorial to the end and my dualboot of ubuntu and windows is working nicelyupdate by the author of this question followed the instructions above and it worked one thing would want to warn people about though if you are like me, you'll have windows with uefi secure boot and you'll need to turn it off to dual boot when disabled it, while was able to use ubuntu just fine, was unable to access my windows os because it asked for bitlocker recovery key you get asked this for disabling secure boot if you are not sure where you have your bitlocker key id, make sure you find it before you install ubuntu, because if you are unable to find your recovery key, you will not br able to access your windows os luckly found it on my microsoft account on seperate pc and so was fine, but for those of you who are unsure where to find your recovery key, go herehttpsyoutubeazlgzldwniqhope this helps",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 16,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "lab1"
+            ],
+            "answered": true,
+            "title": "what are we doing in lab",
+            "content": "hello all,are we working on lab tomorrow as class tomorrow morning or something else unrelated to lab thanks",
+            "responses": [
+                {
+                    "content": "we are working on lab as of this week monday morning was the class lab time but you should be able to ask someone to help you if you still need help personally have time from 1250 to and finished the lab already can help out whoever needs help behindthe starbucks atarntzen hall ah just bring your laptop gabrielpeople have labs tomorrow wednesday as well avery",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 18,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "lab1"
+            ],
+            "answered": false,
+            "title": "sample working github submission example",
+            "content": "this might not be the most efficient, but for those who are struggling this might help96ae15fff7c74524b1d9f509d17ca285jpegf14f1e15d83941c5bbbc8d496e6e8ce1jpeg3c18321eb20e4d70bd9cf2cb25ce3902jpeg",
+            "responses": [
+                {
+                    "content": "another thing that would like to add is does anyone know of any good tutorials on navigating travis ci am having hard time even remotely understanding it, and travis ci's tutorials are confusing me",
+                    "is_answer": false
+                }
+            ]
+        },
+        {
+            "id": 19,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "lab1"
+            ],
+            "answered": true,
+            "title": "travis ci says i'm doing something wrong",
+            "content": "complied and ran this code in the ubuntu terminal today, and it successfully printed hello worldpublic class helloworld\tpublic string getgreeting \t\t\treturn hello world\t\tpublic static void mainstring args\t\t\thelloworld obj new helloworld\t\tsystemoutprintlnobjgetgreeting\tbut when ran it through travis ci, it failed to build see attached screenshots why doesn't it work here if it works in the ubuntu terminal fix suggestions hopefully simple unless really messed up would be most appreciatedcapturepngcapture2png",
+            "responses": [
+                {
+                    "content": "you have to push the code that you've edited into github, which it looks like you have not if you look in capturepng, it's showing that it's still building with the first commit, labeled initial commitmake sure that you add the file to the commit the command below adds all changes that you have done in the current folder as well as the changes in the folders within your current folder as wellgit add then commit to your local repogit commit commit message change to whatever you didthen push the changes to your local repo to githubgit push",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 20,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "lab1"
+            ],
+            "answered": true,
+            "title": "java exception",
+            "content": "good evening dr hao,as was trying to submit the labi to github, travis informed got build fail went on to check the error on java test report and it said javalangunsupportedclassversionerrori just wonder if you can help me fix this exceptionbest,",
+            "responses": [
+                {
+                    "content": "you are asked to uncomment one line in the helloworldjava in the instruction, which means that you may not change what goes into that line but only uncomment ityou deleted the period there, and that's the cause of the build fail",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 23,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "lab2"
+            ],
+            "answered": true,
+            "title": "lab output indentation",
+            "content": "in the lab google documentation, one of the implementation details is that we need to make the outputs line up on the right sideall the examples in the document though and the outputs of the test cases are all aligned on the left sidecould this requirement be clarifieddo we need to align everything up to the right most character, or do we need to indent everything by one tabedit to clarify, the requirement is the first bullet point on the 2nd page of the documentation",
+            "responses": [
+                {
+                    "content": "updatedto align your output per line, you will need to use the tab character in your print statements you may need one or more characters in each line play around with it until the output lines upthis is not hard requirement",
+                    "is_answer": true
+                },
+                {
+                    "content": "by output believe they mean the actual numbers, so you want to line up all the numbers you calculateex hours 4000gross pay 30000i know the math isn't correct",
+                    "is_answer": false
+                }
+            ]
+        },
+        {
+            "id": 24,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "lab2"
+            ],
+            "answered": true,
+            "title": "lab2 clarifying rounding requirements",
+            "content": "the lab documentation says we shall round to the hundredth placedoes this mean, for example, if gross pay 2195, that we must print 21950, or is printing 2195 acceptablethank you",
+            "responses": [
+                {
+                    "content": "i'd assume that rounding to the hundredths place does mean including the zero at the end of 21950in any case, adding an extra zero couldn't hurt",
+                    "is_answer": false
+                },
+                {
+                    "content": "rounding applies to calculation printing with or without the trailing 0s are both okay",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 27,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "lab2"
+            ],
+            "answered": true,
+            "title": "confused about travis ci check",
+            "content": "finished my code and have had travis ci check, but it keeps coming out as failed the console in travis ci tests the code and gives me the expectedactual value of what my code put out but it doesn't line up with my personal tests and don't understand why for example, travis ci says when testing hours per week, that the expected value is 395 it then says my actual value was 5075 this doesn't make sense to me as when test it in the computers cmd, the value comes out as expected 395 any help would be greatly appreciatedsolved",
+            "responses": [
+                {
+                    "content": "somequestions for you to perform debuggingwhat is the definition of net paymentwhat is the definition of total paymentwhat does your net payment method dowhat does the lab instruction say about netpay methodi can confirm travis works as it is intended for lab2",
+                    "is_answer": true
+                },
+                {
+                    "content": "dont know why you got 5075 which seems pretty far off theres probably something wrong there might got the same problem when had the same result displayed on my machine but the travis showed me different result found it useful to pay attention to round the number immediately after the calculation not wait until display on the console then you round it in systemoutprint then youll have floating point issue",
+                    "is_answer": false
+                }
+            ]
+        },
+        {
+            "id": 28,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "lab2"
+            ],
+            "answered": true,
+            "title": "should set maximum of 168 hours when taking input from the user",
+            "content": "hello everyone,so while was working on my 2nd lab and trying to add user input to my code, realized that the user could potentially enter an integer that's too big and cause java to throw an exception to avoid this, was thinking could set maximum of 168 hours so that the user can't input values that are too big 168 hours week would this be good ideathanks in advance",
+            "responses": [
+                {
+                    "content": "you are certainly encouraged to consider all possible scenarios and what makes valid input",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 29,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "lab2"
+            ],
+            "answered": true,
+            "title": "lab sessions",
+            "content": "are we required to attend the lab sessions",
+            "responses": [
+                {
+                    "content": "as we explained in the very first class, we set up lab sessions to help you and we don't take attendanceif you lack selfcontrol or fall behind the pace of the class, you may consider going to lab sessions if you always finish lab assignments early, you can use the time for something else",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 30,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "lab2"
+            ],
+            "answered": true,
+            "title": "questions about lab",
+            "content": "have two questions about lab 21 what is the deal with using the thing to line up the inputs was able to get my output to look pretty much identical to the example given in the lab google doc without using at all is it really necessary if it's possible to get the output to look correctly without them2 do we have to have loop to ask for input repeatedly, or will one run suffice my build passed on travis ci without loop, so is it necessary to implement loop in the main method to get full points for the lab",
+            "responses": [
+                {
+                    "content": "using can help you align on both left and right, which can render something likesdfasd\t\t12zsdgadfadf\t13adsdfasd\t14it's optional2,how you implement it is totally up to youa better question to ask is whether your code can achieve the required interactions as is laid out in lab2 instruction see page",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 34,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "lab2"
+            ],
+            "answered": false,
+            "title": "more problems with travis ci",
+            "content": "hello,my build is failing and have no idea why for some reason think it has to do with the testing file for netpay even though didn't even touch it in addition, ensured that was rounding in my netpay function but travis is still complainingnetpayfailpngnetpayfail2pngnetpayfail3pngnetpayfail4png",
+            "responses": [
+                {
+                    "content": "your print statement is likely formatting the number to be rounded, but the actual stored value is unrounded solved this by making sure that when defined netpayvalue wrapped netpaynumberofhours in rounding method",
+                    "is_answer": false
+                }
+            ]
+        },
+        {
+            "id": 37,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "lab2",
+                "lab3"
+            ],
+            "answered": false,
+            "title": "what does it mean to code method",
+            "content": "received several questions on the method netpay of lab2, which are all relevant to your conceptual understanding of methodsfunctions if you don't get it, you will meet more problems with lab3 list the questions below and hope you can do some research on the questions while waiting for other capable students chime inwhy do need netpay method like to code everything in main methodwhy do need to write the calculation and printing codes for two times, both under netpay and in the main method it seems redundantcan perform all my calculations in systemoutprintmy code seems to print everything as intended do still need netpay methodwhy do need methodsfunctions anyway what do they do",
+            "responses": [
+                {
+                    "content": "splitting logic into reusable methods has several benefitsit drastically reduces duplicate code, thereby reducing file sizeit makes errors easier to manage, since problem with one method can be more easily isolated from the rest of the program and tested this is how most of the tests on travisci work, as far as can tellit can make the code easier to read as well, by splitting up the problem you can have individual, small, methods that you can easily figure out what they do, rather than needing tons of comments or to figure out what the code is doing this helps with figuring out errors tooyou don't need to know how method is implemented in order to use it java itself includes hundreds of builtin methods that you can use without knowing the details of how they work on system level systemoutprintln, stringequals, mathround, etc this is called abstraction",
+                    "is_answer": false
+                }
+            ]
+        },
+        {
+            "id": 38,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "lab2"
+            ],
+            "answered": false,
+            "title": "travis issues",
+            "content": "travis is telling me that my code isn't rounding properly, but when run it in the terminal it displays the values that travis says it should however, travis is telling me that it isn't receiving the 2nd decimal place any suggestions",
+            "responses": [
+                {
+                    "content": "since travis only checks the return statement and not the print output, would say that you should make sure your method is rounding both the calculations and the return output properlymake sure you are rounding to the 2nd decimal place this is from the lab instructions i'd take look at more problems with travis ci from earlier todayplease note that every calculation needs to be rounded to the hundredth 2nd decimal place, including the calculation of gross payment, federal tax, state tax, social security, medicare, and net pay you are expected to do some research and find how to do that on yourself",
+                    "is_answer": false
+                }
+            ]
+        },
+        {
+            "id": 39,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "lab3"
+            ],
+            "answered": true,
+            "title": "confused about how to implement replacesingle without old character as parameter",
+            "content": "am having trouble understanding how it's possible to replace certain instance of character within the input string if the old character is not passed as parameter on the appendix within the google doc for lab 3, it shows that the user entering the old character is necessary for the program to know what to replace this brings me to my final question how would you be able to find instances of the old character without being able to access it within the replacesingle method i'm little confused herealso, there appears to be disparity between the instructions for implementation of the replacesingle method between the comments in the java file and on the google doc in the java comments, it says the method should replace the character at specified index with new character, but on the google doc, it says the method should replace specific instance of specified character with another i'm puzzled as to why there are two different descriptions of what the method should actually do",
+            "responses": [
+                {
+                    "content": "there are other methods such as validateoccurance that will help you suggest you look at the skeleton for that method and it may help you determine how to implement your replacesingle methodfrom the description that comes with the method, it appears that the method is just supposed to take the character at index and replace it with newchar determining that index is something that will happen outside of the method the google doc describes what the userentered command replace single will do in the final product, which is not necessarily all taken care of in the replacesingle method, even though that would make sense",
+                    "is_answer": true
+                },
+                {
+                    "content": "questionfor you to thinkshould replacesingle method take care of the tasks of finding the old characterif you see any mismatch between google doc and code skeleton, stick to the instruction of code skeleton in other words, do not change the parameters or method names",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 40,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "lab3"
+            ],
+            "answered": true,
+            "title": "validatestring method clarification lab3",
+            "content": "the description of this method makes me think it only validates string, but then the example given makes it seem like it also validates characters too should create separate validatechar method",
+            "responses": [
+                {
+                    "content": "i'm not sure about that either, it does definitely seem like creating separate validatechar method would be good idea",
+                    "is_answer": false
+                },
+                {
+                    "content": "if you see that as necessary, go ahead and create more helper methods some may see this as unnecessary, as you grab the char from the string, while the stringmakes processinguser inputexactly the same as elsewhere",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 41,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "lab3"
+            ],
+            "answered": true,
+            "title": "what is validateoccurance supposed to do",
+            "content": "think it is supposed to return the last index of char, as long as there are as many chars in the string as the number inputted, but i'm confused on what it is actually asking for",
+            "responses": [
+                {
+                    "content": "it is supposed to return the index of the occurance of the char that you are looking for if it wants the 2nd occurance of character, but three of them exist, it'd return the index of the 2nd occurance",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 44,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "lab3"
+            ],
+            "answered": true,
+            "title": "stringbuilder allowed",
+            "content": "hello all,are we allowed to implement stringbuilder in lab3 thanks",
+            "responses": [
+                {
+                    "content": "allowed, although may not be necessary",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 46,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "project",
+                "other"
+            ],
+            "answered": true,
+            "title": "is there any way to access our project yet",
+            "content": "hey all,does anyone else remember that there was going to be project announced this week keep checking canvas and nothing has shown up does anyone have access to itthanks in advance",
+            "responses": [
+                {
+                    "content": "you will see your project released either this evening or tomorrow morning on canvas you will receive an email alert when it is released",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 47,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "lab3"
+            ],
+            "answered": false,
+            "title": "using print reverse multiple times",
+            "content": "i've made printreverse function, and it can reverse given string multiple times, but whenever try to use it again, it prints out the reversed string instead of reversing back to the original one i'm pretty sure have to change my string variable to the new reversed string, but i'm not sure how to do that seeing as my function prints the reversed string but doesn't return ithow would retrieve my reversed string and make my original string variable equal to the reversed stringany help would be greatly appreciated",
+            "responses": [
+                {
+                    "content": "if you look at the examples, the reversed string is never saved off this is from page of the lab instructionsenter the string to be manipulatedco dawgsenter your command quit, print reverse, replace all, replace single, removeprint reversesgwad ocenter your command quit, print reverse, replace all, replace single, removereplace singleskip few lines, and then you the initial, unreversed string even though reverse string was only called onceyour new sentence is go dawgsenter your command quit, print reverse, replace all, replace single, removequitthus, you don't need to save off or retrieve the reversed string",
+                    "is_answer": false
+                }
+            ]
+        },
+        {
+            "id": 53,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "lab3"
+            ],
+            "answered": true,
+            "title": "loop on error",
+            "content": "for lab3 the instructions say that simple error message is sufficient if the user enters an invalid input would it be ok to have the user loop through their input until they enter valid character input in the appendix pasted below it shows the command being exited out of once the user enters an invalid int for the replacesingle method, and so i'm wondering if that applies to every inputyour new sentence is go dawgsenter your command quit, print reverse, replace all, replace single, removereplace singleenter the character to replacegenter the new charactercwhich would you like to replace2error the letter you are trying to replace does not existenter your command quit, print reverse, replace all, replace single, removequitintuitively feel like having the user loop through until they enter something valid would create the best user interactions, but at the same time i'm not sure if it's allowed",
+            "responses": [
+                {
+                    "content": "this interpretation is wrongin the appendix pasted below it shows the command being exited out of once the user enters an invalid int for the replacesingle methodthesample interaction shows that there is supposed to loopyour new sentence is go dawgs enter your command quit, print reverse, replace all, replace single, remove replace single enter the character to replace enter the new character which would you like to replace error the letter you are trying to replace does not exist enter your command quit, print reverse, replace all, replace single, remove let me know if you find this difficult to understand",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 55,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "project1"
+            ],
+            "answered": false,
+            "title": "project team 3pm lecture",
+            "content": "does anyone still need team or has room for one more teammate",
+            "responses": [
+                {
+                    "content": "need teammatehey it's under hangman if you want to join you posted an answer so can only edit not respondkirsten",
+                    "is_answer": false
+                }
+            ]
+        },
+        {
+            "id": 56,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "project1"
+            ],
+            "answered": false,
+            "title": "project team 100 lecture",
+            "content": "looking for teammates for project 1, would like to meet on weekend to work on the project contact me at ohatamwwuedu",
+            "responses": [
+                {
+                    "content": "i'm still looking for team if anyone else needs teammate i've sent you an emailmy email mcdowej4wwuedu",
+                    "is_answer": false
+                }
+            ]
+        },
+        {
+            "id": 57,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "project1"
+            ],
+            "answered": false,
+            "title": "project 300 pm lecture team",
+            "content": "hey i'm looking for teammates for project 1, for the pm lecture time my email is jaecklewwuedu if you need to contact me if you still have room for teammate let me know",
+            "responses": []
+        },
+        {
+            "id": 58,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "project1"
+            ],
+            "answered": false,
+            "title": "project team 100 pm lecture",
+            "content": "is anyone still looking for group or have an open spot on their team any help would be greatly appreciatedplease email me at mcdowej4wwuedu",
+            "responses": []
+        },
+        {
+            "id": 59,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "project1"
+            ],
+            "answered": false,
+            "title": "open slot for project 3pm lecture",
+            "content": "hey guys, if anyone still needs team have an open slot for project if you want to join its named gillian and helen on github or you can email me at goscingwwuedu",
+            "responses": []
+        },
+        {
+            "id": 61,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "project1"
+            ],
+            "answered": false,
+            "title": "project team for 100 class",
+            "content": "hi everyone, am still looking for team to work together with for project for the 1pm class shoot me an email at woodk20wwueduif youre interestedthanks,kenny otani",
+            "responses": []
+        },
+        {
+            "id": 62,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "project1"
+            ],
+            "answered": false,
+            "title": "team for project 300 lecture",
+            "content": "does anyone need group or have an open spot in one email is adamsl9wwuedu if you do",
+            "responses": [
+                {
+                    "content": "need group",
+                    "is_answer": false
+                }
+            ]
+        },
+        {
+            "id": 63,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "project1"
+            ],
+            "answered": true,
+            "title": "should the inputted letter be case sensitive",
+            "content": "i'm wondering about when the user enters lowercase letter, if the letter in the actual word is uppercase, should that be treated as correct or incorrect",
+            "responses": [
+                {
+                    "content": "i'm not entirely sure what the answer to that is, although you could just use the tolowercase method in any case to turn anything the user enters into lowercase",
+                    "is_answer": false
+                },
+                {
+                    "content": "cases shall be ignored for instance, if user gives you g, you can always convert that to and treat the input as valid",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 64,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "project1"
+            ],
+            "answered": true,
+            "title": "project isint question",
+            "content": "hi, was wondering what the skeleton code means when it asks me to find ifa string can be parsed to an integer don't understand what this means and what the purpose of the method is",
+            "responses": [
+                {
+                    "content": "basically its asking you to return true if running integerparseintstr will be successful and false if it will cause an error there are two ways know of to do this one is to use exception handling, and the other is to use regular expression if you want to know more, id suggest googling those terms",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 65,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "project1"
+            ],
+            "answered": false,
+            "title": "project group",
+            "content": "have been sick with the flu for most of this week and was wondering if there was group that still had room for another person am in the 300 lecture andrew oliver",
+            "responses": [
+                {
+                    "content": "need team too have been sick as well",
+                    "is_answer": false
+                }
+            ]
+        },
+        {
+            "id": 66,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "project1"
+            ],
+            "answered": false,
+            "title": "looking for team",
+            "content": "hi, i'm looking for team for project 1, my email is bennetr7wwueduif you have an open slot for 100",
+            "responses": []
+        },
+        {
+            "id": 67,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "exam"
+            ],
+            "answered": true,
+            "title": "midterm policy questions",
+            "content": "hello,what sections of the modules and textbook will the midterm cover is the midterm mixture of multiple choice and write code questions what are the rules regarding the cheat sheet will we be given midterm study guide thanks",
+            "responses": [
+                {
+                    "content": "we covered allthese questions like this in class time long time ago for future questions like this, you may need to reach out to your classmates for help this forum is not meant to replace lectures or make it convenient for anyone to skip lecturesby any meansfirst, which textbook are you referring to if you are talking about the supplement textbook we deployed on github, it's chapters 13second, there will be multiple choices, code reading and code writingthird, you can bring onepage doublesided cheat sheet no rules on what you can have on itfourth, we have mentioned what will be covered during lecture time when wewere talking about topic that is likely to appear in your midterm you have to seek help from your classmates on that",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 68,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "quiz1"
+            ],
+            "answered": false,
+            "title": "there's quiz in the grade book but nothing attached",
+            "content": "help what is this quiz did miss it in class or can still take it it says that it's due nov 5th so i'm confused don't want to miss grade",
+            "responses": [
+                {
+                    "content": "if you are talking about quiz 1, we have already taken that, at least in the pm lecture i'm pretty sure they are already graded but the professor decided not to put them into the gradebook until there are more grades in there so it doesn't affect grades too much quizzes and other attendance taking methods are only of your grade",
+                    "is_answer": false
+                }
+            ]
+        },
+        {
+            "id": 69,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "project1"
+            ],
+            "answered": true,
+            "title": "travis ci question",
+            "content": "my group and pushed code to travis that passed multiple times then some code that didn't compile accidentally got pushed it has since been fixed, but now travis is producing weird error on code that should work any ideas",
+            "responses": [
+                {
+                    "content": "it's likely you've installed something that has either modified your jdk installation, or has messed with your 'javaopts' env var we have to fix this manually please schedule time with me",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 71,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "project1"
+            ],
+            "answered": false,
+            "title": "looking for team",
+            "content": "am looking for group to do the project1 with was out sick this week and am in the lecture at pm my email is feistowwuedu let me know if anyone has any open spaces or wants to make group",
+            "responses": []
+        },
+        {
+            "id": 72,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "lab4"
+            ],
+            "answered": true,
+            "title": "lab4 format question",
+            "content": "when it asks us to format our tostring result ascenter x,yradius rdoes it need to return itwith that indentation or can it be on one line",
+            "responses": [
+                {
+                    "content": "used escape character to create new lineiehello students hello studentsvshello nstudents hello students",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 73,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "project1"
+            ],
+            "answered": false,
+            "title": "viewing complete list of teams in github",
+            "content": "hello all,how do you get to the area in github where you can view every single team in the 300p lecture including yours, and where others can join your team am unable to find this through the links on the project1 google doc thanks",
+            "responses": [
+                {
+                    "content": "believe this is what you are looking fori am assuming most teams are secret",
+                    "is_answer": false
+                }
+            ]
+        },
+        {
+            "id": 74,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "lab4"
+            ],
+            "answered": false,
+            "title": "scanner for lab4",
+            "content": "hi,in lab4 document it says, remember, your methods must work properly with any input we can provide, so test rigorouslydoes this mean that we are expected to test the methods in lab4 using scanner input, or is the input hardcoded in by the programmer",
+            "responses": [
+                {
+                    "content": "since the methods and constructors take objects and numeric data types as parameters and not strings, think we are just supposed to make sure that our code can handle all possible inputs given those types, like making sure circle never has negative radius we don't have to worry about the user inputting empty strings or invalid numbers because if someone did decide to use the circle class with scanner input, all of these issues would have to be handled before the input was converted to doubles and passed to these methods",
+                    "is_answer": false
+                }
+            ]
+        },
+        {
+            "id": 76,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "lab4"
+            ],
+            "answered": true,
+            "title": "travis ci test result differs from my own tests",
+            "content": "pushed my code to github and noticed that my equals method returned the wrong result in one of the test cases tried the exact same test on my own and my code produced the expected result i'm confused as to why there's discrepancy between travis's result and the result got while testing the method myselfthe test wascircletest testequals failedjavalangassertionerrorthis is test on your equals method given circlecenter 00, 00radius 10and another circlecenter 00, 00radius 12they are the sameexpected is falsebut was trueat orghamcrestmatcherassertassertthatmatcherassertjava20at orgjunitassertassertthatassertjava956but when tested it myself, got false, the expected result what",
+            "responses": [
+                {
+                    "content": "",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 77,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "lab4"
+            ],
+            "answered": true,
+            "title": "need help rounding",
+            "content": "hi, am having difficulty rounding numbers again my area calculation is as followsreturn mathroundmathpi mathpowradius, 1000 1000and this is my code for testing the area calculationtest area method systemoutprintlntesting area measurement systemoutprintlnthe area of circle with circle is circlearea ninstead of outputting3483681 rounded to the third place the way want it, this code outputs, 34830 how do you fix this thanks",
+            "responses": [
+                {
+                    "content": "this is what did to round my values to three decimal placesmathroundnum 10000 10000using mathround on the number multiplied by 10000 and then dividing that result by 10000 seemed to do the trick you can round to any number of decimal places by doing this with 10 to the power of however many decimal places you need used this strategy in lab 2, just with 1000 so it would round to decimal placesto add on to this, the root problem of the code provided initially is that the number would be rounded to whole integer every time, as you are only multiplyingdividing by 1000, not 10000 this can be fixed by either dividing by 10000, like above, or by type casting the mathround operation to double, as mathround outputs an int by default",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 78,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "lab4"
+            ],
+            "answered": true,
+            "title": "should circle object be able to accept negative initial radius",
+            "content": "is our circle object supposed to accept negative radii when we make new one for example,if initiatecircle examplecircle new circle1, 1, 1and then callexamplecirclesetradius1it would still return 10 when call examplecirclegetradiushowever, if initialized it withcircle anothercircle new circle1, 1, 1and then called anothercirclegetradiusit would be perfectly happy returning 10is that acceptable or should be trying to validate the parameters for the circle class",
+            "responses": [
+                {
+                    "content": "that's legit concern and you certainly should address it in your code otherwise, travis will tell you that some test cases failed",
+                    "is_answer": true
+                },
+                {
+                    "content": "this is specifically addressed in the lab4 document",
+                    "is_answer": false
+                }
+            ]
+        },
+        {
+            "id": 79,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "lab4"
+            ],
+            "answered": true,
+            "title": "user inputs when creating method",
+            "content": "are we to assume that the user enters valid doubles, as opposed to chars or strings, when creating an object, or do we need to check for that also, should the user's inputs be rounded, or does that only apply to calculationsthanks",
+            "responses": [
+                {
+                    "content": "are we to assume that the user enters valid doubles, as opposed to chars or strings yes your method parameters already define the data types, sothe answer to thisquestion doesn't really help you with muchshould the user's inputs be rounded, or does that only apply to calculations am not sure what you mean by user's inputs there's nowhere in this lab that you take inputs directly from users rounding applies to whenever you save your calculation to variables see the lab instruction on that",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 81,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "project1"
+            ],
+            "answered": false,
+            "title": "project team",
+            "content": "hello,i've been sick for the past week and am desperately in need of team for project my email is kodungrwwuedu,please email me if you don't have team or would like more team member thank you",
+            "responses": []
+        },
+        {
+            "id": 83,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "lab4"
+            ],
+            "answered": true,
+            "title": "lab default constructor",
+            "content": "in the lab instructions, it says the default constructor does nothing, but in the code itself, it says to be modified what am expected to do with the default constructor",
+            "responses": [
+                {
+                    "content": "think nothing is done to the default constructor",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 84,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "project1"
+            ],
+            "answered": true,
+            "title": "return error if fewer than spaces allowed entered",
+            "content": "in the document it says user must enter the number of indices, but don't see any other reference or further emphasis on this pointshould weprint error message and continue to prompt if they enter fewer indices than those allowed",
+            "responses": [
+                {
+                    "content": "from pdfenter your difficulty easy e, intermediate i, or hard hethe secret word is identifierthe word is please enter the letter you want to guess 7your input is not valid try againguesses remaining 15please enter the letter you want to guess aplease enter the spaces you want to check separated by spaces1 your input is not valid try againguesses remaining 15please enter the letter you want to guess aplease enter the spaces you want to check separated by spaces1 3your input is not valid try againguesses remaining 15as you can see from the examples the project expects you to print an error message if they input fewer indices than allowed",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 87,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "project1"
+            ],
+            "answered": true,
+            "title": "question of capitalization elaboration",
+            "content": "java is outputted by randomwordif user input is converted to lowercase, this becomes insolvablewe applied tolowercase when assigning secret word from list to prevent this",
+            "responses": [
+                {
+                    "content": "can you clarify what you are asking am not sure understand your question",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 92,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "lab5"
+            ],
+            "answered": true,
+            "title": "changing method parameters",
+            "content": "are we allowed to change method parameters for lab didn't see anywhere in the google doc that explicitly said it wasn't allowed",
+            "responses": [
+                {
+                    "content": "no, you can't change them, and there's no reason to the methods that don't use parameters don't need them",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 93,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "project2"
+            ],
+            "answered": true,
+            "title": "can we change method parameters project",
+            "content": "hey all,this is similar to question that's already been asked for lab 5, but for project want to know if it's okay to change the method parameters for any of the given project methods it seems like should be able to because the default parameters for solvesudoku is only the 2d array of characters, and know need some way to keep track of where am in the board so adding extra parameters is the only solution that can think of to do thatthanks in advance,isaiah",
+            "responses": [
+                {
+                    "content": "you aren't allowed to change the given method's parameters as assume it messes with how the labs are graded, but you are allowed to create helper methods with helper methods you could either overload the given methods or write new method that does what you want, however you choose to solve your code",
+                    "is_answer": true
+                },
+                {
+                    "content": "you can always treat the given method as wrapper method andset the inner method of yours to accept more parameters wrapper methodpublic void givenmethodint var inner method mymethodvar, stringprivate void mymethodint var, string str do whatever want",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 94,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "lab5"
+            ],
+            "answered": true,
+            "title": "what to return for empty queuesstacks",
+            "content": "for lab 5, the instructions specifically say that, this problem only needs to work in the scope of integers, which take would mean any integer that's positive, negative, or zero, despite the example cases only including positive integers, unless i'm mistakenif that's the case, i'm confused as to what pop, top, remove and peek, which are the methods affected by empty queues and stacks, are supposed to return to signify an empty queuestack to the user, because they require thati return an int in all scenarios, and usual practices like or wouldn't be idealhere, because they could just be normal valuesi don't know if just printing something is enough for this or not, but just wanna be sureadding on to this, normal stack will throw emptystackexception when pop or top is used on an empty stack and queue will throw nosuchelementexception when remove is used on an empty queue are we to throw these same exceptions or just inform the user that their attempted action is invalid an empty queue will return null when peek is called on it, are we to return null as well",
+            "responses": [
+                {
+                    "content": "this is good question that you should try to answer in your code see the lab instructionyou may not assume that all operations are valid for example, pop or peek operations might be called on an empty stack how do you address such scenarios in your codea hint on this can you recall some methods that we covered that can end the execution of method abruptly, likesystemexit",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 95,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "project2"
+            ],
+            "answered": false,
+            "title": "project group",
+            "content": "hi i'mkatie, am in the 300 class, and i'm looking for partner or two for project 2my email is chris90wwueduor you can text me 4252995511 if that's easier for you than emailing",
+            "responses": [
+                {
+                    "content": "hey, sent you an email if you are still looking for partner",
+                    "is_answer": false
+                }
+            ]
+        },
+        {
+            "id": 96,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "project2"
+            ],
+            "answered": true,
+            "title": "isparticallyvalid",
+            "content": "hey guys,i was wondering why isparticallyvalid takes two points for it's parameters when it seems like it'll work fine given only one point to check the row, column, and squarethankskirsten",
+            "responses": [
+                {
+                    "content": "you need to think that this method checks an area in the given 2d sudoku board using two points top left corner and right bottom corner is conventional way to stand for an area, as it works for anything regardlessly if you are talking about row, column, or squareyou can certainly use number to stand for row ie, row number, but this representation doesn't work for squarefor this project, if you stick to the requirement of the parameters, the feedback you see from travis may better help you, and it also makes our grading little bit easier",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 97,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "project2"
+            ],
+            "answered": true,
+            "title": "possible bug in solution",
+            "content": "sometimes when we run the tests locally on our computers, our test for isspotvalid fails, yet when we look at the puzzle, it looks like it should be passing in the above puzzle, putting in the very bottom right corner should work as there is no ones within that 3x3 section as well as within that rowcolumn is this the correct outputintended output of the solution jaredit pushed and got similar situation below on travis",
+            "responses": [
+                {
+                    "content": "this certainly looks like pass used fuzzy logic to facilitate checking and testing there might be issues with some very edge cases could you please open an issue on your github repository so we can dig deeperthanks",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 98,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "lab5"
+            ],
+            "answered": false,
+            "title": "lab reverse queue",
+            "content": "does anyone have advice on reversing queue for qstack everything can find online says to use stacks to reverse queue but for the purpose of this assignment we obviously can not",
+            "responses": [
+                {
+                    "content": "rather than reversing the queue, you could make copy of the queue by iterating through your main queue and through the iteration process, grab the value you want",
+                    "is_answer": false
+                }
+            ]
+        },
+        {
+            "id": 99,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "lab5"
+            ],
+            "answered": false,
+            "title": "is recursion really the only way to get squeue to work",
+            "content": "same as title have tried lots of ways to get squeue to work but recursion seems the be the only way any help",
+            "responses": [
+                {
+                    "content": "implemented squeue without recursion what specifically are you having trouble with",
+                    "is_answer": false
+                }
+            ]
+        },
+        {
+            "id": 101,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "lab5"
+            ],
+            "answered": true,
+            "title": "confused on constructor for qstack",
+            "content": "i'm finding myself stuck on creating constructor for the qstack class anyone have any tips on where to start",
+            "responses": [
+                {
+                    "content": "did you get chance to review the slides classes objectspdf we put on canvas the constructor is an abstract concept in objectedoriented programming you need to understand it first before start thinking about the constructor for qstack",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 102,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "project2"
+            ],
+            "answered": false,
+            "title": "looking for group for project",
+            "content": "was wondering if any group had space for person for project am in the 300 lecture reach me at olivera4wwuedu",
+            "responses": [
+                {
+                    "content": "hey, sent you an email if you are still looking for partner",
+                    "is_answer": false
+                }
+            ]
+        },
+        {
+            "id": 105,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "other"
+            ],
+            "answered": false,
+            "title": "int to int",
+            "content": "hello,how do you convert int to int using one line of code suppose have int arr1i triedint integerparseintarr1tostring but it doesn't work",
+            "responses": [
+                {
+                    "content": "no, not atleast in any readableeasily understandable formatyou could theoretically do the below if all of your ints were strings instead this isn't tested btw, no clue if it actually worksint integerparseintstringjoin, string",
+                    "is_answer": false
+                }
+            ]
+        },
+        {
+            "id": 106,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "project2"
+            ],
+            "answered": false,
+            "title": "project looking for partner",
+            "content": "hello everyone,im in the 300 oclock lecture and was wondering if anyone had room for partner or was looking for partner thanks",
+            "responses": [
+                {
+                    "content": "quinn edgerton is still looking for team please reach him edgertqwwuedu",
+                    "is_answer": false
+                }
+            ]
+        },
+        {
+            "id": 108,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "project2"
+            ],
+            "answered": false,
+            "title": "we have an open spot on our team for project calebgabriel 300 lecture",
+            "content": "if anyone is still alone don't feel shy to join us send me message first one in my mailbox will be the one sohngwwueduupdate spot fill quinn edgerton is still looking for team please reach him edgertqwwuedu",
+            "responses": []
+        },
+        {
+            "id": 109,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "lab5"
+            ],
+            "answered": false,
+            "title": "invalid stack and queue operations",
+            "content": "hello,what are examples of invalid stack and queue operations besides using pop and peek on an empty stack or queue thanks",
+            "responses": []
+        },
+        {
+            "id": 111,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "project2"
+            ],
+            "answered": false,
+            "title": "sudokup",
+            "content": "was asked this question todayso me and my partner were trying to get started on project today and we have already ran into big issue when moved sudokupclass into the same folder as sudokujava, and uncommented line 6, got an error that says cannot access sudokup we asked three of the mentors how to fix this issue and none of them knew how to fix it i'm sending you few screenshots so you can see what we're looking at how do fix this issuehope to hear back from you soon so we can begin working on the project",
+            "responses": [
+                {
+                    "content": "we had similar issue with the file sodokup for some reason after pushing to git, the file would not upload so every time we pull the file would disappear, it finally stayed in git once uploaded it manually through the webpage",
+                    "is_answer": false
+                }
+            ]
+        },
+        {
+            "id": 112,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "project2"
+            ],
+            "answered": false,
+            "title": "travis check isspotvalid",
+            "content": "we were testing to see if our isparticallyvalid worked and am unsure if the travis ci is accurately testing the code due to the square constraints",
+            "responses": [
+                {
+                    "content": "we've noticed similar inaccuracies as well, if you look at possible bug in solution on the left hand side from last week",
+                    "is_answer": false
+                }
+            ]
+        },
+        {
+            "id": 114,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "project2"
+            ],
+            "answered": true,
+            "title": "travis ci requests not queuing requests",
+            "content": "i've done multiple updates to project 2, that don't seem to be running through travis it just says request received, but doesn't want to queue any of them what should do here",
+            "responses": [
+                {
+                    "content": "can confirm that there's queue of updates from several people that are running you can't see those, but it will be your turn when those updates get through",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 117,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "project2"
+            ],
+            "answered": true,
+            "title": "travis ci directory error",
+            "content": "hello,my team and are getting this error that prevents us from compiling our sodukujava code unless we are mistaken, it appears to be on travis' end",
+            "responses": [
+                {
+                    "content": "built your project locally, and it is passing all of the tests it looks like travis is having some issue with gradleyou can run the tests yourself by running the following command in the root of your repositorygradlew build infoif you see build successfulnear the end of the input, then your program is passing all of the tests this doesn't guarantee perfect score, make sure to review the grading criteria for the project",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 120,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "final_exam"
+            ],
+            "answered": false,
+            "title": "study group",
+            "content": "anyone want to meet up and study before the exam next week let me know",
+            "responses": [
+                {
+                    "content": "sure, when would you want to",
+                    "is_answer": false
+                }
+            ]
+        },
+        {
+            "id": 121,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "project1"
+            ],
+            "answered": true,
+            "title": "project rubric",
+            "content": "is there way we can see the project grading rubric feel like our group got marked down an excessive amount of points for simple error",
+            "responses": [
+                {
+                    "content": "grading of project is based on whether you have passed all the unit test cases, and whether your main method renders the specified user interactioni can't tell much given the lack of information about your casei am happy to take another look at the grading of your team please let me know the url to your project repo",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 122,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "final_exam",
+                "other"
+            ],
+            "answered": true,
+            "title": "an error with one of the practice solutions",
+            "content": "hello all,hope studies are going well so have question from the linked list lecture slide if you've read through this lecture slide, you'll find the solution to practice is public listnode plusonelistnode head listnode headreverse reverselisthead listnode cur headreverse int extra curdata while cur null curdata curdata extra if curdata 10 curdata curdata 10 extra else extra cur curnext if extra curnext new listnodeextra return reverselistheadreverse if you haven't looked at this problem yet, the goal is to add to linked list eg 123null becomes 124null now correct me if i'm wrong, but think there's something wrong with this line if extra curnext new listnodeextrathe problem see is that we're trying to assign curnext to our new listnode, but curnext doesn't exist because the while loop runs until cur is pointing to null therefore, by the end of our loop, our cur pointer isn't pointing to listnode object and so it should throw an error if we call curnext right just wanted to see if i'm right on this",
+            "responses": [
+                {
+                    "content": "that looks like an error, but an easytofix one public listnode plusonelistnode head listnode headreverse reverselisthead listnode cur headreverse int extra curdata while cur null curdata curdata extra if curdata 10 curdata curdata 10 extra else extra if curnext null cur curnext else break if extra curnext new listnodeextra return reverselistheadreverse",
+                    "is_answer": true
+                }
+            ]
+        },
+        {
+            "id": 125,
+            "term": "k0znlq4j6fe3x4",
+            "folders": [
+                "project2"
+            ],
+            "answered": true,
+            "title": "project comments",
+            "content": "my project was graded down couple points, but see no comments clarifying why where can get more information about the score",
+            "responses": [
+                {
+                    "content": "please send me an email, and will take look at this",
+                    "is_answer": true
+                }
+            ]
+        }
+    ],
+    "idf": {},
+    "df": {},
+    "answers": [
+        {
+            "question_id": 6,
+            "term": "jmccf6d1kva4x4"
+        },
+        {
+            "question_id": 9,
+            "term": "jmccf6d1kva4x4"
+        },
+        {
+            "question_id": 10,
+            "term": "jmccf6d1kva4x4"
+        },
+        {
+            "question_id": 11,
+            "term": "jmccf6d1kva4x4"
+        },
+        {
+            "question_id": 12,
+            "term": "jmccf6d1kva4x4"
+        },
+        {
+            "question_id": 16,
+            "term": "jmccf6d1kva4x4"
+        },
+        {
+            "question_id": 17,
+            "term": "jmccf6d1kva4x4"
+        },
+        {
+            "question_id": 18,
+            "term": "jmccf6d1kva4x4"
+        },
+        {
+            "question_id": 21,
+            "term": "jmccf6d1kva4x4"
+        },
+        {
+            "question_id": 23,
+            "term": "jmccf6d1kva4x4"
+        },
+        {
+            "question_id": 25,
+            "term": "jmccf6d1kva4x4"
+        },
+        {
+            "question_id": 28,
+            "term": "jmccf6d1kva4x4"
+        },
+        {
+            "question_id": 30,
+            "term": "jmccf6d1kva4x4"
+        },
+        {
+            "question_id": 31,
+            "term": "jmccf6d1kva4x4"
+        },
+        {
+            "question_id": 35,
+            "term": "jmccf6d1kva4x4"
+        },
+        {
+            "question_id": 37,
+            "term": "jmccf6d1kva4x4"
+        },
+        {
+            "question_id": 38,
+            "term": "jmccf6d1kva4x4"
+        },
+        {
+            "question_id": 42,
+            "term": "jmccf6d1kva4x4"
+        },
+        {
+            "question_id": 43,
+            "term": "jmccf6d1kva4x4"
+        },
+        {
+            "question_id": 47,
+            "term": "jmccf6d1kva4x4"
+        },
+        {
+            "question_id": 48,
+            "term": "jmccf6d1kva4x4"
+        },
+        {
+            "question_id": 6,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 8,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 10,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 11,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 13,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 16,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 19,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 20,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 23,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 24,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 27,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 28,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 29,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 30,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 39,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 40,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 41,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 44,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 46,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 53,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 63,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 64,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 67,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 69,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 72,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 76,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 77,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 78,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 79,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 83,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 84,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 87,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 92,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 93,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 94,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 96,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 97,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 101,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 114,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 117,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 121,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 122,
+            "term": "k0znlq4j6fe3x4"
+        },
+        {
+            "question_id": 125,
+            "term": "k0znlq4j6fe3x4"
+        }
+    ]
+}
