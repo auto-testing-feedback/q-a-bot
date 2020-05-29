@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Demonstration</h1>
+<p>
+	The generated similarity score between two questions is a weighted sum of two comparison algorithms: a vectorized TF-IDF dot product, and a fuzzy string match.
+</p>
+<p>
+	The equation for the weighted similarity score is as follows:
+	\[ S(t_1, t_2) = tf\_idf(t_1, t_2)(\alpha) + fuzzy(t_1, t_2)(1-\alpha)\]
+	
+	Titles and bodies for posts are also weighted differently. The outputs of each of the functions above are actually themselves weighted sums, where the title similarity score has weight \(\beta\) and the body \((1-\beta)\)
+</p>
+<h3>Direct comparison</h3>
+<h4>Entry</h4>
+<div class="row">
+	<div class="col">
+		<form>
+			<div class="form-group">
+				<input type="text" class="form-control" id="title1Input" placeholder="Title 1">
+			</div>
+			<div class="form-group">
+				<textarea class="form-control mt-2" id="body1Input" rows="3" placeholder="Body 1"></textarea>
+			</div>
+		</form>
+	</div>
+	<div class="col">
+		<form>
+			<div class="form-group">
+				<input type="text" class="form-control" id="title2Input" placeholder="Title 2">
+			</div>
+			<div class="form-group">
+				<textarea class="form-control mt-2" id="body2Input" rows="3" placeholder="Body 2"></textarea>
+			</div>
+		</form>
+	</div>
+</div>
+<div class="d-flex justify-content-center">
+	<form>
+		<div class="form-check form-check-inline">
+			<h4>\(\alpha: \)</h4>
+			<input type="number" class="form-control" placeholder="0">
+		</div>
+		<div class="form-check form-check-inline">
+			<h4>\(\beta: \)</h4>
+			<input type="number" class="form-control" placeholder="0">
+		</div>
+	</form>
+	<button type="button" class="btn btn-primary btn-sm">Trigger update</button>
+</div>
+<h4>Response</h4>
+
+<br>
+<h3>Pushing to corpus and post classification</h3>
+<h4>Entry</h4>
+<div class="d-flex justify-content-center">
+	<div class="row w-50">
+		<div class="col">
+			<form>
+				<div class="form-group">
+					<input type="text" class="form-control" id="title1Input" placeholder="Title 1">
+				</div>
+				<div class="form-group">
+					<textarea class="form-control mt-2" id="body1Input" rows="3" placeholder="Body 1"></textarea>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<div class="d-flex justify-content-center">
+	<button type="button" class="btn btn-primary btn-sm">Trigger update</button>
+</div>
+<h4>Response</h4>
+{% endblock %}

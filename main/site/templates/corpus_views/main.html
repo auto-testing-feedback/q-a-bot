@@ -1,0 +1,106 @@
+<h2>Corpus</h2>
+<button type="button" class="btn btn-primary btn-sm">Trigger update</button>
+<div id="term-toggles"></div>
+<div id="terms"></div>
+<script>
+function toggleTermClicked(button) {
+	if ($(button).hasClass('btn-primary')) {
+		$(button).removeClass('btn-primary').addClass('btn-outline-primary');
+		$(`#term-${$(button).attr('term')}`).hide();
+	} else {
+		$(button).removeClass('btn-outline-primary').addClass('btn-primary');
+		$(`#term-${$(button).attr('term')}`).show();
+	}
+}
+
+function toggleFolderClicked(button) {
+	if ($(button).hasClass('btn-primary')) {
+		$(button).removeClass('btn-primary').addClass('btn-outline-primary');
+	} else {
+		$(button).removeClass('btn-outline-primary').addClass('btn-primary');
+	}
+	let hide = $(button).hasClass('btn-outline-primary');
+	$(button).parent().parent().find('#posts').children().each(function (i, e) {
+		if ($(e).attr('folder') == $(button).html()) {
+			if (hide) {
+				$(e).hide();
+			} else {
+				$(e).show();
+			}
+		}
+	});
+}
+
+function showAllFolders(button) {
+	$(button).parent().children(':not(.folder)').each(function (i, e) {
+		if ($(e).hasClass('btn-outline-primary')) {
+			toggleFolderClicked(e);
+		}
+	});
+}
+
+function showNoFolders(button) {
+	$(button).parent().children(':not(.folder)').each(function (i, e) {
+		if ($(e).hasClass('btn-primary')) {
+			toggleFolderClicked(e);
+		}
+	});
+}
+
+function loadPost(term, id) {
+	$.get('/api/' + term + '/' + id, function(data) {
+		data = JSON.parse(data);
+		$(`#terms #term-${term} #posts #post-${id} #postBody${id}`).prepend(data['body']);
+		$(`#terms #term-${term} #posts #post-${id} button`).attr('onclick', '');
+	});
+}
+
+$.get('/api/corpus_terms', function (data) {
+	data = JSON.parse(data)
+	data.forEach(function (term) {
+		term = term;
+		$('#term-toggles').append(`
+		<button type="button" class="btn btn-primary btn-xs" term="${term}" onclick="toggleTermClicked(this);">${term}</button>
+		`);
+		$('#terms').append(`
+		<div id="term-${term}">
+			<h4 class="mt-4 mb-0">${term}</h4>
+			<div id="term-folders">
+				<button type="button" class="btn btn-primary btn-xs folder" onclick="showAllFolders(this)">all</button>
+				<button type="button" class="btn btn-primary btn-xs folder" onclick="showNoFolders(this)">none</button>
+			</div>
+			<div id="posts"></div>
+		</div>
+		`);
+
+		$.get('/api/term_folders/' + term, function (data) {
+			var data = JSON.parse(data);
+			for (folder in data) {
+				$(`#term-${term} #term-folders`).append(`
+				<button type="button" class="btn btn-primary btn-xs" onclick="toggleFolderClicked(this);">${folder}</button>
+				`);
+			};
+		});
+
+		$.get('/api/' + term + '/titles', function (data) {
+			data = JSON.parse(data);
+			data.forEach(function (post) {
+				$(`#terms #term-${term} #posts`).append(`
+				<div folder=${post['folders'][0]} id="post-${post['id']}">
+					<b>${post['id']}: ${post['title']}</b>
+					<button class="btn btn-primary btn-xs" type="button" data-toggle="collapse" data-target="#postBody${post['id']}" onclick="loadPost('${post['term']}', ${post['id']});">toggle view</button>
+					<div class="collapse" id="postBody${post['id']}">
+						<div><a type="button" class="btn btn-primary btn-xs folder" href="/api/report/${post['term']}/${post['id']}">view report</a></div>
+					</div>
+				</div>
+				`);
+				if (post['answered']) {
+					$(`#terms #term-${term} #posts #post-${post['id']} b`).after(`
+						<b>(answered)</b>
+					`);
+				}
+			});
+		});
+	});
+});
+</script>

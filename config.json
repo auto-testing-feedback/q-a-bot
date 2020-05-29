@@ -1,5 +1,12 @@
 {
-	"email": "",
-	"password": "",
-	"course_ids": ["jmccf6d1kva4x4"]
+	"login": {
+		"email": "treshan@wwu.edu",
+		"password": "aKWY34#CKH#X"
+	},
+	"targets": [
+		"k0znlq4j6fe3x4",
+		"jmccf6d1kva4x4",
+		"jiutp89e7rm4w",
+		"jeza02vdzms4ao"
+	]
 }

@@ -1,0 +1,29 @@
+<h2>Grouping</h2>
+<form>
+	<div class="form-check form-check-inline">
+		<h4>\(\gamma: \)</h4>
+		<input type="number" class="form-control" placeholder="0">
+	</div>
+	<button type="button" class="btn btn-primary btn-sm">Trigger update</button>
+</form>
+
+<br>
+<h4>Similarities</h4>
+<div id="similarities"></div>
+
+<script>
+$.get('/api/similarities', function(data) {
+	data = JSON.parse(data);
+	data.forEach(function(entry) {
+		$('#similarities').append(`
+		<p class="mt-0 mb-0">
+		<b>
+			<a href="/api/report/${entry['t1']}/${entry['i1']}">${entry['i1']}</a>
+			<=>
+			<a href="/api/report/${entry['t2']}/${entry['i2']}">${entry['i2']}</a>:
+			</b> ${entry['s']}
+		</p>
+		`);
+	});
+});
+</script>

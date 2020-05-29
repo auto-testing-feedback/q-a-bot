@@ -1,0 +1,37 @@
+<h2>Metrics</h2>
+<h4>Statistics</h4>
+<p>Total posts: <span id="total-posts"></span></p>
+<ul id="by-term"></ul>
+<h4>Figures</h4>
+<div id="figures"></div>
+<script>
+$.get('/api/corpus_stats', function(data) {
+	data = JSON.parse(data);
+	$('#total-posts').html(data['total_posts']);
+	for(term in data['by_term']) {
+		$('#by-term').append(`
+		<li id="${term}">
+			piazza/${term}: ${data['by_term'][term]}
+			<ul id="by-folder"></ul>
+		</li>
+		`);
+	}
+}).done(function() {
+	$('#by-term').children().each(function(i, e) {
+		$.get('api/term_folders/' + $(e).attr('id'), function(data) {
+			data = JSON.parse(data);
+			for(folder in data) {
+				$(e).children('#by-folder').append(`
+				<li>${folder}: ${data[folder]}</li>
+				`);
+			}
+		});
+	});
+});
+
+$.get('/api/figure1', function(data) {
+	$('#figures').append(`
+	<img src="data:image/png;base64, ${data['src']}"/>
+	`);
+});
+</script>

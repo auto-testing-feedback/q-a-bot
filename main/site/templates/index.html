@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Home</h1>
+<nav>
+	<div class="nav nav-tabs" id="nav-tab" role="tablist">
+		<a class="nav-item nav-link active" id="nav-corpus-tab" data-toggle="tab" href="#nav-corpus" role="tab">Corpus</a>
+		<a class="nav-item nav-link" id="nav-grouping-tab" data-toggle="tab" href="#nav-grouping" role="tab">Grouping</a>
+		<a class="nav-item nav-link" id="nav-metrics-tab" data-toggle="tab" href="#nav-metrics" role="tab">Metrics</a>
+	</div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+	<div class="tab-pane fade show active" id="nav-corpus" role="tabpanel">
+		{% include "corpus_views/main.html" %}
+	</div>
+	<div class="tab-pane fade" id="nav-grouping" role="tabpanel">
+		{% include "corpus_views/grouping.html" %}
+	</div>
+	<div class="tab-pane fade" id="nav-metrics" role="tabpanel">
+		{% include "corpus_views/metrics.html" %}
+	</div>
+</div>
+{% endblock %}

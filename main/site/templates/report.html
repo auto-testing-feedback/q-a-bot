@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<a type="button" class="btn btn-primary btn-sm mt-2" href="javascript:history.back()">Back</a>
+<h1>Report</h1>
+<div><b>{{ report['post']['title'] }}</b></div>
+<div><b>{{ report['post']['term'] }}, #{{ report['post']['id'] }}</b></div>
+<p>{{ report['post']['body'] }}</p>
+<div><b>Responses</b></div>
+{% for response in report['post']['responses'] %}
+	<div><p>{{ response['body'] }}</p></div>
+{% endfor %}
+<h2>NLP breakdown</h2>
+uh oh
+<h2>Most similar posts</h2>
+{% for similar in report['similar'] %}
+	<div>
+		<b>{{ similar['title'] }}: {{ similar['s'] }}</b><a href="/api/report/{{ similar['term'] }}//{{ similar['id'] }}">view</a>
+	</div>
+{% endfor %}
+{% endblock %}
